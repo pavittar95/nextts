@@ -65,4 +65,12 @@
         font-feature-settings: 'tnum'on, 'lnum'on, 'liga'off;
         color: var(--black);
     }
+
+    &__white {
+        color: var(--white);
+    }
+
+    &__white {
+        color: var(--black);
+    }
 }

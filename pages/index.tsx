@@ -2,6 +2,7 @@ import Image from "next/image";
 import { GetStaticProps } from "next";
 import { AppProps } from "next/app";
 import styles from "../styles/Home.module.scss";
+import Heading from "stories/components/heading";
 
 export default function Home(props: AppProps) {
   return (
@@ -44,6 +45,9 @@ export default function Home(props: AppProps) {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          <Heading type="h1" color="white">
+            This is a story book Heading
+          </Heading>
         </div>
       </main>
 

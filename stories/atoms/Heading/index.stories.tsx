@@ -5,7 +5,7 @@ import Heading from "./index";
 import { StorybookProvider } from "../../storyBookProvider";
 
 export default {
-  title: "Heading",
+  title: "atoms/Heading",
   component: Heading,
 } as Meta;
 

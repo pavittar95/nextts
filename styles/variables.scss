@@ -3,9 +3,16 @@
 :root {
     --white: #ffffff;
     --black: #000000;
+    --primary: #0074AB;
+    --secondary: #8a99a8;
 }
 
 @font-face {
     font-family: Roboto;
     src: url('../stories/assets/fonts/RobotoFlex.ttf');
+}
+
+@font-face {
+    font-family: RobotoSerif;
+    src: url('../stories/assets/fonts/RobotoSerif.ttf');
 }

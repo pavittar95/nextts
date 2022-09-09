@@ -2,7 +2,7 @@ import Image from "next/image";
 import { GetStaticProps } from "next";
 import { AppProps } from "next/app";
 import styles from "../styles/Home.module.scss";
-import Heading from "stories/components/heading";
+import Heading from "stories/atoms/Heading";
 
 export default function Home(props: AppProps) {
   return (

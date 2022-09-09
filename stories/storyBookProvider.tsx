@@ -6,7 +6,6 @@ import "../styles/variables.scss";
 
 // import createStore from 'store/store';
 
-// import 'designSystem/variables.scss';
 // import 'designSystem/typography.scss';
 // import 'scss/_common.scss';
 // import './styles.scss';

@@ -1,6 +1,7 @@
-import '../styles/globals.css'
+import "../styles/globals.scss";
+import "../styles/variables.scss";
 
-import { AppProps } from 'next/app';
+import { AppProps } from "next/app";
 
 function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;

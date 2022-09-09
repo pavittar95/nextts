@@ -2,7 +2,7 @@ import classNames from "classnames";
 import React from "react";
 import "./Button.module.scss";
 type Props = {
-  type?: "primary" | "secondary";
+  type?: "primary" | "secondary" | "transparent";
   loading?: boolean;
   round?: boolean;
   id?: string;
@@ -35,6 +35,7 @@ export default function Button({
       className={classNames("atom-btn", {
         "atom-btn__primary": type === "primary",
         "atom-btn__secondary": type === "secondary",
+        "atom-btn__transparent": type === "transparent",
       })}
       id={id}
       onClick={onClick}

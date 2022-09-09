@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/variables.scss";
+import "../styles/globals.scss";
 // import { Store, AnyAction } from 'redux';
 // import { Provider } from 'react-redux';
 // import withRedux from 'next-redux-wrapper';

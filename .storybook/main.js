@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   stories: [
     "../stories/**/*.stories.mdx",
@@ -19,5 +21,12 @@ module.exports = {
   framework: "@storybook/react",
   core: {
     builder: "@storybook/builder-webpack5",
+  },
+  webpackFinal: (config) => {
+    config.resolve.roots = [
+      path.resolve(__dirname, "../public"),
+      "node_modules",
+    ];
+    return config;
   },
 };

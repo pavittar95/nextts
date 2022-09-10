@@ -1,1 +1,6 @@
-.atom-header {}
+.organism-header {
+    &__login-btn {
+        font-size: 14px;
+        font-variation-settings: 'wght' 300, 'wdth' 100;
+    }
+}

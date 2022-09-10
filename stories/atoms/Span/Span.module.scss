@@ -1,0 +1,41 @@
+.atom-span {
+    &__white {
+        color: var(--white);
+    }
+
+    &__black {
+        color: var(--black);
+    }
+
+    &__small {
+        font-family: RobotoSerif, 'Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+    }
+
+    &__medium {
+        font-family: RobotoSerif, 'Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.025em;
+    }
+
+    &__large {
+        font-family: RobotoSerif, 'Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: -0.025em;
+    }
+
+    &__bold {
+        font-variation-settings: 'wght' 900;
+    }
+
+}

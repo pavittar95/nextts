@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import React from "react";
-import "./Button.module.scss";
+import styles from "./Button.module.scss";
+
 type Props = {
   type?: "primary" | "secondary" | "transparent";
   loading?: boolean;
@@ -12,6 +13,7 @@ type Props = {
   height?: 16 | 24 | 34 | 45 | 48 | 56 | 64;
   maxWidth?: string | number;
   disabled?: boolean;
+  className?: string;
 };
 
 export default function Button({
@@ -24,6 +26,7 @@ export default function Button({
   round,
   htmlType = "button",
   disabled = false,
+  className = "",
 }: Props) {
   return (
     <button
@@ -32,11 +35,15 @@ export default function Button({
         height,
         borderRadius: round ? height / 2 : undefined,
       }}
-      className={classNames("atom-btn", {
-        "atom-btn__primary": type === "primary",
-        "atom-btn__secondary": type === "secondary",
-        "atom-btn__transparent": type === "transparent",
-      })}
+      className={classNames(
+        styles["atom-btn"],
+        {
+          [styles["atom-btn__primary"]]: type === "primary",
+          [styles["atom-btn__secondary"]]: type === "secondary",
+          [styles["atom-btn__transparent"]]: type === "transparent",
+        },
+        className
+      )}
       id={id}
       onClick={onClick}
       type={htmlType}

@@ -1,0 +1,14 @@
+.atom-image {
+    width: 100%;
+
+    >span {
+        position: unset !important;
+
+        img {
+            object-fit: contain;
+            width: 100% !important;
+            position: relative !important;
+            height: unset !important;
+        }
+    }
+}

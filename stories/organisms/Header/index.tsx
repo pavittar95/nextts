@@ -7,6 +7,7 @@ import Span from "../../atoms/Span";
 import Button from "../../atoms/Button";
 import CartIcon from "../../assets/icons/cart_icon.svg";
 import LogoIcon from "../../assets/icons/logo.png";
+import { MenuIcon } from "stories/atoms/Icons/Menu";
 
 export default function Header() {
   return (
@@ -17,7 +18,7 @@ export default function Header() {
       )}
     >
       <div className="flex items-center justify-between p-4 mx-auto max-w-7xl sm:px-6">
-        <ul className="flex items-center justify-around w-1/3">
+        <ul className="items-center justify-around hidden w-1/3 md:flex">
           <li className="px-2">
             <Link href="/products">
               <a>Products</a>
@@ -34,10 +35,13 @@ export default function Header() {
             </Link>
           </li>
         </ul>
+        <div className="flex items-center justify-start w-1/3 md:hidden">
+          <MenuIcon />
+        </div>
         <div className="flex items-center justify-center w-1/3">
           <Link href="/">
             <a>
-              <Image src={LogoIcon} width="100" height={40} alt="logo" />
+              <Image src={LogoIcon} width={100} height={40} alt="logo" />
             </a>
           </Link>
         </div>
@@ -55,7 +59,7 @@ export default function Header() {
           </div>
           <div>
             <Button type="transparent" htmlType="button" className="relative">
-              <Image src={CartIcon} width="32" height="32" alt="cart" />
+              <Image src={CartIcon} width={32} height={32} alt="cart" />
               <Span size="small" color="black" className="absolute bottom-2.5">
                 4
               </Span>

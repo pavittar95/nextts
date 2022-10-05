@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import { GetServerSideProps } from "next";
 import { AppProps } from "next/app";
 import styles from "../styles/Home.module.scss";
 import Layout from "stories/organisms/Layout";
@@ -15,6 +15,13 @@ export default function Home(props: AppProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  return { props: {} };
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+
+  return {
+    props: {},
+  };
 };

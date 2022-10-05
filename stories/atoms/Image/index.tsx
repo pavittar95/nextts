@@ -14,8 +14,7 @@ export default function Image({ src, webPSrc, blur, alt }: Props) {
   return (
     <div className={styles["atom-image"]}>
       <NextImage
-        // src={showFallback ? src : webPSrc}
-        src={''}
+        src={showFallback ? src : webPSrc}
         alt={alt}
         placeholder="blur"
         blurDataURL="https://cdn.lovefromyours.com/simplified-desktop.jpg"
